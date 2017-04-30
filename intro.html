@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="stylesheet" type = "text/css" href="assets/css/layout.css"/>
+    <link rel="stylesheet" type = "text/css" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet"/>
+    <script src="https://use.fontawesome.com/3b64961880.js"></script>
+  </head>
+  <body>
+  <div class="intro-panel">
+    <div class="intro-box clearfix">
+      <button class = "continue-site">skip intro</button>
+      <h1 class = "intro-text">
+
+      </h1>
+    </div>
+  </div>
+<!-- -->
+  <script async type = "text/javascript" src = "assets/js/script.js"></script>
+  <script type = "text/javascript">
+  window.addEventListener('load',function(){
+    var quit_intro = document.getElementsByClassName('continue-site')[0];
+    quit_intro.addEventListener('click',function(){
+     hide_intro();
+    });
+    typer('intro-text','  On 15 October 1931 a legend was born, later on he became the President of India. He was the scientist, an administrator and a researcher, the man with doctorate degrees from 40 universities.This website is created to give tribute to our legendary former President, Mr. APJ Abdul Kalam.',100);
+  });
+  </script>
+  </body>
+</html>
