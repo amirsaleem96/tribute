@@ -227,7 +227,7 @@
            </div>
          </li>
          <li>
-           <div>
+           <div class = "fix-me">
               <span class = "circle"></span>
              <span class = "year">1990</span>
              <p>Recieved Padma Vibhushan</p>
@@ -241,35 +241,35 @@
            </div>
          </li>
          <li>
-           <div>
+           <div class = "fix-me">
               <span class = "circle"></span>
              <span class = "year">1997</span>
              <p>Government of India and Indira Gandhi Award</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "fix-me">
               <span class = "circle"></span>
              <span class = "year">1998</span>
              <p>Recieved Veer Savarkar Award</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "fix-me">
               <span class = "circle"></span>
              <span class = "year">2000</span>
              <p>Ramanujan Award</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "fix-me">
               <span class = "circle"></span>
             <span class = "year">2008</span>
             <p> Won Hoover Medal given by ASME Foundation, USA</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "fix-me">
               <span class = "circle"></span>
             <span class = "year">2011</span>
             <p>The IEEE honored Kalam with IEEE Honorary Membership in 2011</p>
@@ -325,6 +325,16 @@
       toggle_menu();
     });
   });
+  window.sr = scrollReveal();
+  sr.reveal('.fix-me',{
+   origin : 'bottom',
+   distance: '20px',
+   duration : 250, 
+   reset : true,
+   mobile : false,
+   viewFactor : 0.4 
+  });
   </script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </body>
 </html>
