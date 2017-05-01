@@ -50,84 +50,84 @@
         <h1>Timeline</h1>
        <ul>
          <li>
-           <div class = "fix-me">
+           <div class = "animate-me">
              <span class = "circle circle-inverse"></span>
              <span class = "year year-inverse">15th Oct 1931</span>
              <p>A great scientist is born to a boat-owner's family</p>
            </div>
          </li>
          <li>
-           <div class = "fix-me">
+           <div class = "animate-me">
              <span class = "circle circle-inverse"></span>
              <span class = "year year-inverse">1960</span>
              <p>Became a scientist with DRDO</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "animate-me">
               <span class = "circle circle-inverse"></span>
              <span class = "year year-inverse">1969</span>
              <p>Joined space research at ISRO</p>
            </div>
          </li>
          <li>
-           <div class = "fix-me">
+           <div class = "animate-me">
               <span class = "circle circle-inverse"></span>
              <span class = "year year-inverse">1980</span>
              <p>Launched India's first indegeneous satellite</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "animate-me">
               <span class = "circle circle-inverse"></span>
              <span class = "year year-inverse">1981</span>
              <p>Padma Bhushan</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "animate-me">
               <span class = "circle circle-inverse"></span>
              <span class = "year year-inverse">1980s</span>
              <p>Build crucial missiles for India</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "animate-me">
               <span class = "circle circle-inverse"></span>
              <span class = "year year-inverse">1990</span>
              <p>Padma Vibhushan</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "animate-me">
               <span class = "circle circle-inverse"></span>
             <span class = "year year-inverse">1992 - 1999</span>
             <p>Nuclear Testing</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "animate-me">
               <span class = "circle circle-inverse"></span>
             <span class = "year year-inverse">1997</span>
             <p>Bharat Ratna</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "animate-me">
               <span class = "circle circle-inverse"></span>
             <span class = "year year-inverse">25 July 2002</span>
             <p>Becomes the 11th President of India</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "animate-me">
               <span class = "circle circle-inverse"></span>
             <span class = "year year-inverse">24 July 2007</span>
             <p>End of Presidency</p>
            </div>
          </li>
          <li>
-           <div>
+           <div class = "animate-me">
               <span class = "circle circle-inverse"></span>
             <span class = "year year-inverse">27 July 2015</span>
             <p>The People's President passes away</p>
@@ -146,7 +146,6 @@
               Every asset on this website such as images, videos, content are taken from third party websites.
               Owner of this website doesn't claims to own any of the images, contents and videos on this website.
             </p>
-          </p>
         </div>
         <div class="L-four M-tewelve">
           <h2>Follow me on</h2>
@@ -160,6 +159,7 @@
       </footer>
     </div>
   </div>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script type = "text/javascript">
    window.addEventListener('scroll',function(){
      header_scroll(770);
@@ -169,6 +169,15 @@
      toggle_menu_btn.addEventListener('click',function(){
        toggle_menu();
      });
+     window.sr = ScrollReveal();
+     sr.reveal('.animate-me',{
+     origin : 'bottom',
+     distance: '20px',
+     duration : 250,
+     reset : true,
+     mobile : false,
+     viewFactor : 0.4
+    });
    });
   </script>
   <script async type = "text/javascript" src = "assets/js/script.js"></script>
