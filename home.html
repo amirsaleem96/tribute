@@ -311,8 +311,8 @@
       </footer>
     </div>
   </div>
-  <script async type = "text/javascript" src = "assets/js/script.js"></script>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>  
+ <script async type = "text/javascript" src = "assets/js/script.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script type = "text/javascript">
   window.addEventListener('scroll',function(){
     header_scroll(770);
@@ -326,14 +326,15 @@
     });
   });
   window.sr = ScrollReveal();
-  sr.reveal('.fix-me',{
-   origin : 'bottom',
-   distance: '20px',
-   duration : 250, 
-   reset : true,
-   mobile : false,
-   viewFactor : 0.4 
-  });
+ sr.reveal('.fix-me',{
+  origin : 'bottom',
+  distance: '100px',
+  duration : 250,
+  opacity: 0,
+  reset : true,
+  mobile : false,
+  viewFactor : 0.4
+ });
   </script>
   </body>
 </html>
