@@ -46,13 +46,23 @@ function typer(elemClass,text,speed){
     }
   }
 }
+function isElementInViewport (elemClass){
+ var elem = document.getElementsByClassName('elemClass')[0];
+ var rect = elem.getBoundingClientRect();
+ return (
+   rect.top >= 0 &&
+   rect.left >=0 &&
+   rect.bottom <= (window.innerHeight || document.document.Element.clientHeight) &&
+   rect.top <= (window.innerHeight || document.document.Element.clientWidth)
+ );
+}
 function carousel_scroll (speed){
   var elem = document.getElementsByClassName('carousel-container')[0];
   var pageHeight = window.pageYOffset;
-  if(pageHeight < 750){
+  if(pageHeight < 700){
      elem.style.transform = 'translateX(0)';
   }
-  else if(pageHeight >= 750 && pageHeight <= 2000){
+  else if(pageHeight >= 700 && pageHeight <= 2000){
    elem.style.transform = 'translateX('+(-(pageHeight/speed))+'px)';
  } else {
    elem.style.transform = 'translateX(0)';
