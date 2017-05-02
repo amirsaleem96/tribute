@@ -62,7 +62,7 @@ function carousel_scroll (speed){
   if(pageHeight < 700){
      elem.style.transform = 'translateX(0)';
   }
-  else if(pageHeight >= 700 && pageHeight <= 2000){
+  else if(pageHeight >= 700 && pageHeight <= 2300){
    elem.style.transform = 'translateX('+(-(pageHeight/speed))+'px)';
  } else {
    elem.style.transform = 'translateX(0)';
